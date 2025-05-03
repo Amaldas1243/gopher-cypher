@@ -1,0 +1,121 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Qlynt</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html" class="logo-text"><span>Q</span>lynt</a>
+          <span class="tagline">Digitally Built, Locally Trusted</span>
+        </div>
+        <button class="mobile-menu-btn" id="menuBtn">☰</button>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Our Portfolio</h1>
+      <p>See how we've helped businesses shine online</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Recent Projects</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="/api/placeholder/800/600" alt="Spice Garden" />
+          <div class="service-content">
+            <h3>Spice Garden Restaurant</h3>
+            <p>Custom site with online ordering that boosted sales by 35%.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="/api/placeholder/800/600" alt="Urban Boutique" />
+          <div class="service-content">
+            <h3>Urban Boutique</h3>
+            <p>Mobile-first e-commerce with secure payment system.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="/api/placeholder/800/600" alt="BrightLearn" />
+          <div class="service-content">
+            <h3>BrightLearn Academy</h3>
+            <p>Learning portal with CMS and blog integration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Inspired by Our Work?</h2>
+        <p>Let’s build something great for your business too.</p>
+        <a href="contact.html" class="btn btn-accent">Contact Us</a>
+      </div>
+    </div>
+  </section>
+      <!-- Back to Top Button -->
+      <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+      <!-- JavaScript -->
+      <script>
+          // Mobile Menu Toggle
+          const menuBtn = document.getElementById('menuBtn');
+          const nav = document.getElementById('nav');
+          
+          menuBtn.addEventListener('click', () => {
+              nav.classList.toggle('active');
+          });
+          
+          // Header Scroll Effect
+          const header = document.getElementById('header');
+          
+          window.addEventListener('scroll', () => {
+              if (window.scrollY > 100) {
+                  header.classList.add('scrolled');
+              } else {
+                  header.classList.remove('scrolled');
+              }
+          });
+          
+          // Back to Top Button
+          const backToTopBtn = document.getElementById('backToTop');
+          
+          window.addEventListener('scroll', () => {
+              if (window.scrollY > 300) {
+                  backToTopBtn.classList.add('active');
+              } else {
+                  backToTopBtn.classList.remove('active');
+              }
+          });
+          
+          backToTopBtn.addEventListener('click', (e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+      </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Qlynt</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 100%;
+      transition: border-color 0.3s ease;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: var(--primary);
+      outline: none;
+    }
+    .contact-form button {
+      align-self: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html" class="logo-text"><span>Q</span>lynt</a>
+          <span class="tagline">Digitally Built, Locally Trusted</span>
+        </div>
+        <button class="mobile-menu-btn" id="menuBtn">☰</button>
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Let’s talk about how we can help your business grow</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-wrapper" style="display: flex; flex-wrap: wrap; gap: 50px; align-items: flex-start;">
+        <div class="contact-form-wrapper" style="flex: 1; min-width: 300px;">
+          <div class="section-title">
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! Send us a message and we’ll get back as soon as possible.</p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone Number (Optional)" />
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contact-details" style="flex: 1; min-width: 300px;">
+          <div class="section-title">
+            <h2>Contact Details</h2>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Phone</h3>
+              <p><a href="tel:+917012028379">+91 70120 28379</a></p>
+            </div>
+            <div class="feature-card">
+              <h3>Email</h3>
+              <p><a href="mailto:info@qlynt.in">info@qlynt.in</a></p>
+            </div>
+            <div class="feature-card">
+              <h3>Address</h3>
+              <p>123 Dummy Street, Kochi, Kerala, 682001</p>
+            </div>
+            <div class="feature-card">
+              <h3>Business Hours</h3>
+              <p>Mon - Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 4:00 PM<br>Sun: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title" style="margin-top: 80px;">
+        <h2>Find Us on the Map</h2>
+      </div>
+      <div style="width: 100%; height: 400px; margin-top: 30px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.365208202506!2d76.2673040152613!3d9.931232776820297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d3c5d72b1f5%3A0x4f5a8eb90cd31a15!2sDummy%20Location!5e0!3m2!1sen!2sin!4v1682512345678"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+      <!-- Back to Top Button -->
+      <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+      <!-- JavaScript -->
+      <script>
+          // Mobile Menu Toggle
+          const menuBtn = document.getElementById('menuBtn');
+          const nav = document.getElementById('nav');
+          
+          menuBtn.addEventListener('click', () => {
+              nav.classList.toggle('active');
+          });
+          
+          // Header Scroll Effect
+          const header = document.getElementById('header');
+          
+          window.addEventListener('scroll', () => {
+              if (window.scrollY > 100) {
+                  header.classList.add('scrolled');
+              } else {
+                  header.classList.remove('scrolled');
+              }
+          });
+          
+          // Back to Top Button
+          const backToTopBtn = document.getElementById('backToTop');
+          
+          window.addEventListener('scroll', () => {
+              if (window.scrollY > 300) {
+                  backToTopBtn.classList.add('active');
+              } else {
+                  backToTopBtn.classList.remove('active');
+              }
+          });
+          
+          backToTopBtn.addEventListener('click', (e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+      </script>
+</body>
+</html>
